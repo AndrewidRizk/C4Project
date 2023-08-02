@@ -99,6 +99,7 @@ h2, p { color: #666666; }
     font-size: 1.6rem;
     border: none;
     cursor: pointer;
+    
 }
 
 .btn-primary { background-color: #3399CC; }
@@ -166,7 +167,7 @@ h2, p { color: #666666; }
 
 .tm-btn-cta {
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 128, 0, 0.9);
 }
 
 .tm-btn-cta:before { font-size: 180%; }
@@ -435,7 +436,8 @@ video {
     #tm-main-nav .nav-item { margin-right: 50px; margin-top: -30px}
     .navbar-expand-lg .navbar-nav .nav-link { padding: 4px 0px; }
     .navbar-expand-lg .navbar-collapse { justify-content: flex-end; }
-}
+  
+}   
 
 @media (max-width: 1419px) {
     .tm-catalog-item { margin-bottom: 30px; }

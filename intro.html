@@ -10,43 +10,45 @@
     <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
-<!--
+    <!--
 
-TemplateMo 552 Video Catalog
+    TemplateMo 552 Video Catalog
 
-https://templatemo.com/tm-552-video-catalog
+    https://templatemo.com/tm-552-video-catalog
 
--->
+    -->
 </head>
 <style>
-   
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
 
-    /* Unique CSS for the first info box */
-    #info-box-1 {
-        flex: 1;
-        padding-right: 20px;
-        border: 1px solid #ccc;
+    /* Common CSS for both info boxes and images */
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 50px auto;
+        padding: 20px;
         background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
     }
 
-    /* Unique CSS for the first image */
-    #image-1 {
-        flex: 1;
-        padding-left: 20px;
+    .container:hover {
+        transform: scale(1.02);
     }
 
-    /* Unique CSS for the second info box */
-    #info-box-2 {
+    .content {
         flex: 1;
-        padding-left: 20px;
-        border: 1px solid #ccc;
-        background-color: #fff;
+        padding: 20px;
     }
 
-    /* Unique CSS for the second image */
-    #image-2 {
+    .image {
         flex: 1;
-        padding-right: 20px;
+        padding: 20px;
     }
 
     img {
@@ -55,49 +57,31 @@ https://templatemo.com/tm-552-video-catalog
         display: block;
         margin: 0 auto;
     }
-    .container {
-            display: flex;
+
+    .button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+
+    @media (max-width: 767px) {
+        .container {
+            flex-direction: column;
             align-items: center;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-        }
-        container:hover {
-            transform: scale(1.02);
         }
 
-        .content {
-            flex: 1;
-            padding-right: 50px;
-            padding-left: 50px;
-        }
-
+        .content,
         .image {
-            flex: 1;
-            padding-left: 20px;
+            padding: 10px;
         }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease-in-out;
-        }
-
-        .button:hover {
-            background-color: #0056b3;
-        }
+    }
 </style>
 
 <body>
@@ -121,7 +105,8 @@ https://templatemo.com/tm-552-video-catalog
                                     </button>
                                     <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                                         <ul class="navbar-nav text-uppercase">
-                                           
+
+                                        </ul>
                                     </div>
                                 </nav>
                             </div>
@@ -131,38 +116,42 @@ https://templatemo.com/tm-552-video-catalog
             </div>
             <div class="tm-welcome-container text-center text-white">
                 <div class="tm-welcome-container-inner">
-                    
-                    <a href="#info-box-1"" class="btn tm-btn-animate tm-btn-cta tm-icon-down" style="margin-top: 400px; background-color: rgba(0, 128, 0, 0.9);">
+
+                    <a href="#info-box-1" class="btn tm-btn-animate tm-btn-cta tm-icon-down"
+                        style="margin-top: 400px; background-color: rgba(0, 128, 0, 0.9);">
                         <span>Get Started</span>
                     </a>
                 </div>
             </div>
 
             <div id="tm-video-container">
-                
-                    <img style="width: 100%;  " src="image/woman-online-shopping-2.jpg" alt="Fallback image if video is not supported or available">
-                  
+
+                <img style="width: 100%;" src="image/woman-online-shopping-2.jpg"
+                    alt="Fallback image if video is not supported or available">
+
             </div>
-            
-           
+
+
         </div>
 
-        <div id= 'info-box-1' class="container-fluid" >
+        <div id='info-box-1' class="container-fluid">
             <header>
                 <h1>Fast Fashion - The Hidden Cost</h1>
             </header>
 
-            <div  class="container">
-                <div class="content">
-                    <h2>What is Fast Fashion?</h2>
-                    <p>Fast fashion is a term that has emerged over the last couple of decades and has come to dominate the clothing industry. The phrase refers to a business model where designs move from the runway to the store in the shortest time possible to capitalize on current fashion trends.</p>
-                </div>
+            <div class="container">
                 <div class="image">
                     <img src="./image/fast2.jpg" alt="Fast Fashion">
                 </div>
+                <div class="content">
+                    <h2>What is Fast Fashion?</h2>
+                    <p>Fast fashion is a term that has emerged over the last couple of decades and has come to dominate
+                        the clothing industry. The phrase refers to a business model where designs move from the runway
+                        to the store in the shortest time possible to capitalize on current fashion trends.</p>
+                </div>
             </div>
-            
-            
+
+
 
             <div class="container">
                 <div class="image">
@@ -170,40 +159,37 @@ https://templatemo.com/tm-552-video-catalog
                 </div>
                 <div class="content">
                     <h2>Famous Brands</h2>
-                    <p>Brands such as Zara, H&amp;M, and Forever 21 are often associated with this approach. These companies typically produce clothing rapidly and in large volumes, selling items at relatively low prices to meet consumers' demands for staying on-trend without spending a fortune. This means that customers can find new styles in stores almost every week, compared to traditional fashion cycles which typically revolve around seasons.</p>
+                    <p>Brands such as Zara, H&amp;M, and Forever 21 are often associated with this approach. These
+                        companies typically produce clothing rapidly and in large volumes, selling items at relatively
+                        low prices to meet consumers' demands for staying on-trend without spending a fortune. This means
+                        that customers can find new styles in stores almost every week, compared to traditional fashion
+                        cycles which typically revolve around seasons.</p>
 
                 </div>
             </div>
 
-            <div  class="container">
-                <div class="content">
-                    <h2>The Hidden Cost</h2>
-                    <p>However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable practices, leading to significant environmental and social impacts. The industry's focus on speed and low costs can result in overconsumption, waste, pollution, and often questionable labor conditions in the supply chain. While fast fashion has democratized access to trendy clothing, it's essential for consumers to understand these implications and consider more sustainable practices when it comes to their wardrobe.</p>
-
-                </div>
+            <div class="container">
                 <div class="image">
                     <img src="./image/impact.jpg" alt="Fast Fashion">
                 </div>
+                <div class="content">
+                    <h2>The Hidden Cost</h2>
+                    <p>However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable
+                        practices, leading to significant environmental and social impacts. The industry's focus on speed
+                        and low costs can result in overconsumption, waste, pollution, and often questionable labor
+                        conditions in the supply chain. While fast fashion has democratized access to trendy clothing,
+                        it's essential for consumers to understand these implications and consider more sustainable
+                        practices when it comes to their wardrobe.</p>
+
+                </div>
             </div>
-        
+
             <script>
                 // Add interactivity or animations here if needed
             </script>
-                        
+
         </div>
 
-                    
-                </main>
-                <!--
-                <footer class="row pt-5">
-                    <div class="col-12">
-                        <p class="text-right">Copyright 2020 The Video Catalog Company 
-                        
-                        - Designed by <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo</a></p>
-                    </div>
-                </footer>
-            </div> -->
-        </div>
 
     </div> <!-- .tm-page-wrap -->
 
@@ -224,11 +210,11 @@ https://templatemo.com/tm-552-video-catalog
                 newVidWidth = newVidHeight * vidWidth / vidHeight;
             }
 
-            if(newVidWidth > windowWidth) {
+            if (newVidWidth > windowWidth) {
                 marginLeft = -((newVidWidth - windowWidth) / 2);
             }
 
-            if(newVidHeight > 720) {
+            if (newVidHeight > 720) {
                 marginTop = -((newVidHeight - $('#tm-video-container').height()) / 2);
             }
 
