@@ -55,13 +55,48 @@ https://templatemo.com/tm-552-video-catalog
         display: block;
         margin: 0 auto;
     }
-      .container {
+    .container {
             display: flex;
             align-items: center;
-            max-width: 100%;
-            border: 1px solid #ccc;
+            margin: 50px auto;
             padding: 20px;
             background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        container:hover {
+            transform: scale(1.02);
+        }
+
+        .content {
+            flex: 1;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .image {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
         }
 </style>
 
@@ -105,93 +140,55 @@ https://templatemo.com/tm-552-video-catalog
 
             <div id="tm-video-container">
                 
-                    <img style="width: 100%; height: 60%; " src="image/img2.jpg" alt="Fallback image if video is not supported or available">
+                    <img style="width: 100%;  " src="image/woman-online-shopping-2.jpg" alt="Fallback image if video is not supported or available">
                   
             </div>
             
-            <i id="tm-video-control-button" class="fas fa-pause"></i>
+           
         </div>
 
-        <div class="container-fluid" >
-            <div class="container" id="#content2">
-                <div id="info-box-1">
-                    <h2>Left Info Box</h2>
-                    Fast fashion is a term that has emerged over the last couple of decades and has come to dominate the clothing industry. The phrase refers to a business model where designs move from the runway to the store in the shortest time possible to capitalize on current fashion trends. Brands such as Zara, H&M, and Forever 21 are often associated with this approach.
-                    These companies typically produce clothing rapidly and in large volumes, selling items at relatively low prices to meet consumers' demands for staying on-trend without spending a fortune. This means that customers can find new styles in stores almost every week, compared to traditional fashion cycles which typically revolve around seasons.
-                    However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable practices, leading to significant environmental and social impacts. The industry's focus on speed and low costs can result in overconsumption, waste, pollution, and often questionable labor conditions in the supply chain.
-                    While fast fashion has democratized access to trendy clothing, it's essential for consumers to understand these implications and consider more sustainable practices when it comes to their wardrobe
+        <div id= 'info-box-1' class="container-fluid" >
+            <header>
+                <h1>Fast Fashion - The Hidden Cost</h1>
+            </header>
 
+            <div  class="container">
+                <div class="content">
+                    <h2>What is Fast Fashion?</h2>
+                    <p>Fast fashion is a term that has emerged over the last couple of decades and has come to dominate the clothing industry. The phrase refers to a business model where designs move from the runway to the store in the shortest time possible to capitalize on current fashion trends.</p>
                 </div>
-                <div id="image-1">
-                    <img src="/image/img3.png" alt="Image 1">
+                <div class="image">
+                    <img src="./image/fast2.jpg" alt="Fast Fashion">
                 </div>
             </div>
+            
+            
+
             <div class="container">
-                <div id="image-2">
-                    <img src="/image/img3.png" alt="Image 2">
+                <div class="image">
+                    <img src="./image/brands.png" alt="Impacts of Fast Fashion">
                 </div>
-                <div id="info-box-2">
-                    <h2>Right Info Box</h2>
-                    Fast fashion is a term that has emerged over the last couple of decades and has come to dominate the clothing industry. The phrase refers to a business model where designs move from the runway to the store in the shortest time possible to capitalize on current fashion trends. Brands such as Zara, H&M, and Forever 21 are often associated with this approach.
-                    These companies typically produce clothing rapidly and in large volumes, selling items at relatively low prices to meet consumers' demands for staying on-trend without spending a fortune. This means that customers can find new styles in stores almost every week, compared to traditional fashion cycles which typically revolve around seasons.
-                    However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable practices, leading to significant environmental and social impacts. The industry's focus on speed and low costs can result in overconsumption, waste, pollution, and often questionable labor conditions in the supply chain.
-                    While fast fashion has democratized access to trendy clothing, it's essential for consumers to understand these implications and consider more sustainable practices when it comes to their wardrobe
+                <div class="content">
+                    <h2>Famous Brands</h2>
+                    <p>Brands such as Zara, H&amp;M, and Forever 21 are often associated with this approach. These companies typically produce clothing rapidly and in large volumes, selling items at relatively low prices to meet consumers' demands for staying on-trend without spending a fortune. This means that customers can find new styles in stores almost every week, compared to traditional fashion cycles which typically revolve around seasons.</p>
 
                 </div>
             </div>
-            <div class="container">
-                <div id="info-box-1">
-                    <h2>Left Info Box</h2>
-                    Fast fashion is a term that has emerged over the last couple of decades and has come to dominate the clothing industry. The phrase refers to a business model where designs move from the runway to the store in the shortest time possible to capitalize on current fashion trends. Brands such as Zara, H&M, and Forever 21 are often associated with this approach.
-                    These companies typically produce clothing rapidly and in large volumes, selling items at relatively low prices to meet consumers' demands for staying on-trend without spending a fortune. This means that customers can find new styles in stores almost every week, compared to traditional fashion cycles which typically revolve around seasons.
-                    However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable practices, leading to significant environmental and social impacts. The industry's focus on speed and low costs can result in overconsumption, waste, pollution, and often questionable labor conditions in the supply chain.
-                    While fast fashion has democratized access to trendy clothing, it's essential for consumers to understand these implications and consider more sustainable practices when it comes to their wardrobe
 
+            <div  class="container">
+                <div class="content">
+                    <h2>The Hidden Cost</h2>
+                    <p>However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable practices, leading to significant environmental and social impacts. The industry's focus on speed and low costs can result in overconsumption, waste, pollution, and often questionable labor conditions in the supply chain. While fast fashion has democratized access to trendy clothing, it's essential for consumers to understand these implications and consider more sustainable practices when it comes to their wardrobe.</p>
 
                 </div>
-                <div id="image-1">
-                    <img src="/image/img3.png" alt="Image 1">
+                <div class="image">
+                    <img src="./image/impact.jpg" alt="Fast Fashion">
                 </div>
             </div>
-            <div class="container">
-                <div id="image-2">
-                    <img src="/image/img3.png" alt="Image 2">
-                </div>
-                <div id="info-box-2">
-                    <h2>Right Info Box</h2>
-                    Fast fashion is a term that has emerged over the last couple of decades and has come to dominate the clothing industry. The phrase refers to a business model where designs move from the runway to the store in the shortest time possible to capitalize on current fashion trends. Brands such as Zara, H&M, and Forever 21 are often associated with this approach.
-                    These companies typically produce clothing rapidly and in large volumes, selling items at relatively low prices to meet consumers' demands for staying on-trend without spending a fortune. This means that customers can find new styles in stores almost every week, compared to traditional fashion cycles which typically revolve around seasons.
-                    However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable practices, leading to significant environmental and social impacts. The industry's focus on speed and low costs can result in overconsumption, waste, pollution, and often questionable labor conditions in the supply chain.
-                    While fast fashion has democratized access to trendy clothing, it's essential for consumers to understand these implications and consider more sustainable practices when it comes to their wardrobe
-
-                </div>
-            </div>
-            <div class="container">
-                <div id="info-box-1">
-                    <h2>Left Info Box</h2>
-                    Fast fashion is a term that has emerged over the last couple of decades and has come to dominate the clothing industry. The phrase refers to a business model where designs move from the runway to the store in the shortest time possible to capitalize on current fashion trends. Brands such as Zara, H&M, and Forever 21 are often associated with this approach.
-                    These companies typically produce clothing rapidly and in large volumes, selling items at relatively low prices to meet consumers' demands for staying on-trend without spending a fortune. This means that customers can find new styles in stores almost every week, compared to traditional fashion cycles which typically revolve around seasons.
-                    However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable practices, leading to significant environmental and social impacts. The industry's focus on speed and low costs can result in overconsumption, waste, pollution, and often questionable labor conditions in the supply chain.
-                    While fast fashion has democratized access to trendy clothing, it's essential for consumers to understand these implications and consider more sustainable practices when it comes to their wardrobe
-
-                </div>
-                <div id="image-1">
-                    <img src="/image/img3.png" alt="Image 1">
-                </div>
-            </div>
-            <div class="container">
-                <div id="image-2">
-                    <img src="/image/img3.png" alt="Image 2">
-                </div>
-                <div id="info-box-2">
-                    <h2>Right Info Box</h2>
-                    Fast fashion is a term that has emerged over the last couple of decades and has come to dominate the clothing industry. The phrase refers to a business model where designs move from the runway to the store in the shortest time possible to capitalize on current fashion trends. Brands such as Zara, H&M, and Forever 21 are often associated with this approach.
-                    These companies typically produce clothing rapidly and in large volumes, selling items at relatively low prices to meet consumers' demands for staying on-trend without spending a fortune. This means that customers can find new styles in stores almost every week, compared to traditional fashion cycles which typically revolve around seasons.
-                    However, there's a hidden cost to fast fashion. This rapid production often involves unsustainable practices, leading to significant environmental and social impacts. The industry's focus on speed and low costs can result in overconsumption, waste, pollution, and often questionable labor conditions in the supply chain.
-                    While fast fashion has democratized access to trendy clothing, it's essential for consumers to understand these implications and consider more sustainable practices when it comes to their wardrobe
-
-                </div>
-            </div>
+        
+            <script>
+                // Add interactivity or animations here if needed
+            </script>
                         
         </div>
 
